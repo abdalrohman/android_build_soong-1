@@ -96,7 +96,7 @@ var (
 		"armv7-a": []string{
 			"-march=armv7-a",
 			"-mfloat-abi=softfp",
-			"-mfpu=vfpv3-d16",
+			"-mfpu=vfpv4-d32",
 		},
 		"armv7-a-neon": []string{
 			"-mfloat-abi=softfp",
