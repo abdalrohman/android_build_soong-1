@@ -52,7 +52,6 @@ var (
 		"-frerun-cse-after-loop",
 		"-frename-registers",
 		"-mcpu=cortex-a57+crc+crypto+fp+simd --param l1-cache-line-size=64 --param l1-cache-size=32 --param l2-cache-size=512",
-		"-fomit-frame-pointer",
 	}
 
 	arm64Ldflags = []string{
