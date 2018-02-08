@@ -33,6 +33,8 @@ var ClangUnknownCflags = sorted([]string{
 	"-Wunused-but-set-parameter",
 	"-Wunused-but-set-variable",
 	"-fdiagnostics-color",
+	"-falign-inner-loops",
+	"-fno-prefetch-loop-arrays",
 
 	// arm + arm64 + mips + mips64
 	"-fgcse-after-reload",
