@@ -40,7 +40,6 @@ var (
 		"-fno-short-enums",
 		"-no-canonical-prefixes",
 		"-fno-canonical-system-headers",
-
 		"-fno-builtin-sin",
 		"-fno-strict-volatile-bitfields",
 
@@ -81,7 +80,7 @@ var (
 
 	armThumbCflags = []string{
 		"-mthumb",
-		"-Os",
+		"-O2",
 		"-fomit-frame-pointer",
 		"-fno-strict-aliasing",
 	}
