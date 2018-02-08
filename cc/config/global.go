@@ -32,6 +32,8 @@ var (
 		"-Wno-unused",
 		"-Winit-self",
 		"-Wpointer-arith",
+		"-ftree-vectorize", 
+		"-fno-prefetch-loop-arrays",
 
 		// COMMON_RELEASE_CFLAGS
 		"-DNDEBUG",
