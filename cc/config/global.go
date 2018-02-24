@@ -34,6 +34,7 @@ var (
 		"-Wpointer-arith",
 		"-ftree-vectorize", 
 		"-fno-prefetch-loop-arrays",
+		"-fno-gcse",
 
 		// COMMON_RELEASE_CFLAGS
 		"-DNDEBUG",
