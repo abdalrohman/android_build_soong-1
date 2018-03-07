@@ -32,9 +32,12 @@ var (
 		"-Wno-unused",
 		"-Winit-self",
 		"-Wpointer-arith",
-		"-ftree-vectorize", 
-		"-fno-prefetch-loop-arrays",
+		"-ftree-vectorize",
+		"-fno-guess-branch-probability",
 		"-fno-gcse",
+		"-falign-loops",
+		"-falign-functions",
+		
 
 		// COMMON_RELEASE_CFLAGS
 		"-DNDEBUG",
