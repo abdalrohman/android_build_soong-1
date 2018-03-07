@@ -51,7 +51,9 @@ var (
 		"-fgcse-after-reload",
 		"-frerun-cse-after-loop",
 		"-frename-registers",
-		"-mcpu=cortex-a53+crc+crypto+fp+simd --param l1-cache-line-size=64 --param l1-cache-size=32 --param l2-cache-size=512",
+		"-ftree-vectorize", 
+		"-fno-guess-branch-probability",
+		"-fno-gcse",
 	}
 
 	arm64Ldflags = []string{
@@ -80,7 +82,7 @@ var (
 		"kryo": []string{
 			// Use the cortex-a57 cpu since some compilers
 			// don't support a Kryo specific target yet.
-			"-mcpu=cortex-a53",
+			"-mcpu=cortex-a57",
 		},
 	}
 
@@ -101,7 +103,7 @@ func init() {
 		"denver64")
 
 	// Clang supports specific Kryo targeting
-	replaceFirst(arm64ClangCpuVariantCflags["kryo"], "-mcpu=cortex-a53", "-mcpu=kryo")
+	replaceFirst(arm64ClangCpuVariantCflags["kryo"], "-mcpu=cortex-a57", "-mcpu=kryo")
 
 	pctx.StaticVariable("arm64GccVersion", arm64GccVersion)
 
