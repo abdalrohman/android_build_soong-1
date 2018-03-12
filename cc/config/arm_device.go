@@ -75,6 +75,7 @@ var (
 		"-O2",
 		"-fomit-frame-pointer",
 		"-fstrict-aliasing",
+		"-fno-guess-branch-probability",
 		"-funswitch-loops",
 	}
 
@@ -83,6 +84,8 @@ var (
 		"-O2",
 		"-fomit-frame-pointer",
 		"-fno-strict-aliasing",
+		"-fno-guess-branch-probability",
+		"-fno-gcse",
 	}
 
 	armArchVariantCflags = map[string][]string{
