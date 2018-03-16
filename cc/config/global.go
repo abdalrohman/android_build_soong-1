@@ -32,7 +32,6 @@ var (
 		"-Wno-unused",
 		"-Winit-self",
 		"-Wpointer-arith",
-		"-ftree-vectorize",
 		"-fno-guess-branch-probability",
 		"-fno-gcse",
 		"-falign-loops",
