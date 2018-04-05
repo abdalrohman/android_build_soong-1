@@ -36,6 +36,7 @@ var (
 		"-fno-short-enums",
 		"-no-canonical-prefixes",
 		"-fno-canonical-system-headers",
+		"-mcpu=cortex-a53+crc+crypto+fp+simd --param l1-cache-line-size=64 --param l1-cache-size=32 --param l2-cache-size=512",
 
 		// Help catch common 32/64-bit errors.
 		"-Werror=pointer-to-int-cast",
@@ -46,14 +47,13 @@ var (
 
 		// TARGET_RELEASE_CFLAGS
 		"-DNDEBUG",
-		"-O2 -g0",
+		"-O2",
+		"-g0",
+		"-mcpu=cortex-a53+crc+crypto+fp+simd --param l1-cache-line-size=64 --param l1-cache-size=32 --param l2-cache-size=512",
 		"-Wstrict-aliasing=2",
 		"-fgcse-after-reload",
 		"-frerun-cse-after-loop",
 		"-frename-registers",
-		"-ftree-vectorize", 
-		"-fno-guess-branch-probability",
-		"-fno-gcse",
 	}
 
 	arm64Ldflags = []string{
@@ -66,6 +66,7 @@ var (
 		"-Wl,-m,aarch64_elf64_le_vec",
 		"-Wl,--hash-style=gnu",
 		"-Wl,--fix-cortex-a53-843419",
+		"-Wl,--fix-cortex-a53-835769",
 		"-fuse-ld=gold",
 		"-Wl,--icf=safe",
 		"-Wl,--no-undefined-version",
@@ -103,7 +104,7 @@ func init() {
 		"denver64")
 
 	// Clang supports specific Kryo targeting
-	replaceFirst(arm64ClangCpuVariantCflags["kryo"], "-mcpu=cortex-a57", "-mcpu=kryo")
+	replaceFirst(arm64ClangCpuVariantCflags["kryo"], "-mcpu=cortex-a53", "-mcpu=cortex-a53")
 
 	pctx.StaticVariable("arm64GccVersion", arm64GccVersion)
 
