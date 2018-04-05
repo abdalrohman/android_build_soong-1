@@ -39,6 +39,11 @@ var ClangUnknownCflags = sorted([]string{
 	"-falign-functions",
 	"-fno-guess-branch-probability",
 	"-fno-gcse",
+	"-fira-hoist-pressure",
+	"-fira-loop-pressure",
+	"-fsched-pressure",
+	"-fsched-spec-load",
+	"-fpredictive-commoning",
 
 	// arm + arm64 + mips + mips64
 	"-fgcse-after-reload",

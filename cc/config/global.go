@@ -34,9 +34,13 @@ var (
 		"-Wpointer-arith",
 		"-fno-guess-branch-probability",
 		"-fno-gcse",
-		"-falign-loops",
-		"-falign-functions",
-		
+		"-fira-hoist-pressure",
+		"-fira-loop-pressure",
+		"-fsched-pressure",
+		"-fsched-spec-load",
+		"-fpredictive-commoning",
+		"-O2",
+		"-g0",
 
 		// COMMON_RELEASE_CFLAGS
 		"-DNDEBUG",
