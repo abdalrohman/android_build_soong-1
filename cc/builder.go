@@ -491,7 +491,7 @@ func TransformObjToStaticLib(ctx android.ModuleContext, objFiles android.Paths,
 func transformDarwinObjToStaticLib(ctx android.ModuleContext, objFiles android.Paths,
 	flags builderFlags, outputFile android.ModuleOutPath, deps android.Paths) {
 
-	arFlags := "cqs"
+	arFlags := "crs"
 
 	if len(objFiles) == 0 {
 		dummy := android.PathForModuleOut(ctx, "dummy"+objectExtension)
