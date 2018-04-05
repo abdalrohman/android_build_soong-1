@@ -361,7 +361,7 @@ func (sanitize *sanitize) flags(ctx ModuleContext, flags Flags) Flags {
 			flags.RequiredInstructionSet = "thumb"
 			// Workaround for b/33678192. CFI jumptables need Thumb2 codegen.  Revert when
 			// Clang is updated past r290384.
-			flags.LdFlags = append(flags.LdFlags, "-march=armv7-a")
+			flags.LdFlags = append(flags.LdFlags, "-march=armv7-a-neon")
 		}
 		sanitizers = append(sanitizers, "cfi")
 		flags.CFlags = append(flags.CFlags, cfiCflags...)
