@@ -45,6 +45,7 @@ var (
 
 		// TARGET_RELEASE_CFLAGS
 		"-DNDEBUG",
+		"-O2",
 		"-g0",
 		"-Wstrict-aliasing=2",
 		"-fgcse-after-reload",
@@ -73,6 +74,7 @@ var (
 
 	armArmCflags = []string{
 		"-O2",
+		"-g0",
 		"-fomit-frame-pointer",
 		"-fstrict-aliasing",
 		"-fno-guess-branch-probability",
@@ -82,6 +84,7 @@ var (
 	armThumbCflags = []string{
 		"-mthumb",
 		"-O2",
+		"-g0",
 		"-fomit-frame-pointer",
 		"-fno-strict-aliasing",
 		"-fno-guess-branch-probability",
