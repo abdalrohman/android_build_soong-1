@@ -76,7 +76,7 @@ var (
 		"-fomit-frame-pointer",
 		"-fstrict-aliasing",
 		"-fno-guess-branch-probability",
-		"-funswitch-loops",
+		"-fno-gcse",
 	}
 
 	armThumbCflags = []string{
