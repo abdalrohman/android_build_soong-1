@@ -32,6 +32,8 @@ var (
 		"-Wno-unused",
 		"-Winit-self",
 		"-Wpointer-arith",
+		"-O2",
+		"-g0",
 		"-fno-guess-branch-probability",
 		"-fno-gcse",
 		"-fira-hoist-pressure",
@@ -39,8 +41,6 @@ var (
 		"-fsched-pressure",
 		"-fsched-spec-load",
 		"-fpredictive-commoning",
-		"-O2",
-		"-g0",
 
 		// COMMON_RELEASE_CFLAGS
 		"-DNDEBUG",
