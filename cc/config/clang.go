@@ -45,6 +45,8 @@ var ClangUnknownCflags = sorted([]string{
 	"-fsched-pressure",
 	"-fsched-spec-load",
 	"-fpredictive-commoning",
+	"-ftree-partial-pre",
+	"-fivopts",
 
 	// arm + arm64 + mips + mips64
 	"-fgcse-after-reload",
