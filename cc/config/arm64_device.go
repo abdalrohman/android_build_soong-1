@@ -78,9 +78,9 @@ var (
 			"-mcpu=cortex-a53",
 		},
 		"kryo": []string{
-			// Use the cortex-a57 cpu since some compilers
+			// Use the cortex-a53 cpu since some compilers
 			// don't support a Kryo specific target yet.
-			"-mcpu=cortex-a57",
+			"-mcpu=cortex-a53",
 		},
 	}
 

@@ -80,7 +80,7 @@ var ClangUnknownCflags = sorted([]string{
 })
 
 var ClangLibToolingUnknownCflags = []string{
-	"-flto",
+	"-flto*",
 	"-fsanitize*",
 }
 
