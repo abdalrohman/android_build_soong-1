@@ -87,6 +87,7 @@ var ClangLibToolingUnknownCflags = []string{
 func init() {
 	pctx.StaticVariable("ClangExtraCflags", strings.Join([]string{
 		"-D__compiler_offsetof=__builtin_offsetof",
+		"-O3",
 
 		// Help catch common 32/64-bit errors.
 		"-Werror=int-conversion",
