@@ -45,7 +45,7 @@ var (
 		"-Wno-multichar",
 
 		"-O2",
-		"-g",
+		"-g0",
 
 		"-fno-strict-aliasing",
 	}
